@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div class="container mt-5 d-flex gap-5">
 
     <div class=" w-50">
       <div class=" d-flex">
@@ -22,6 +22,15 @@
 
     </div>
 
+    <div class=" mt-5">
+<p class="  p1"> <p class="text-danger p fw-bold"> MOBILE TRANSACTION</p></p>
+<h1 class=" text-secondary w-75 fw-bold">Smart Mobile 
+  <span>Banking</span> </h1>
+<p class=" text-secondary fw-bold">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
+<button class=" btn">Learn more</button>
+
+    </div>
+
 
     
   </div>
@@ -32,6 +41,25 @@ export default {
 }
 </script>
 <style scoped>
+.p{
+  position: relative;
+  z-index: 333;
+}
+.p1::before{
+content: '';
+position: absolute;
+width: 90px;
+height: 80px;
+margin-top: -20px;
+border-radius: 45% 55% 41% 59% / 55% 65% 35% 45% ;
+background-color: #F7F3FA;;
+}
+span{
+  color:rgba(92, 14, 98, 1) ;
+}
+.btn{
+  color:rgba(92, 14, 98, 1) ;
+}
 .box{
   width: 150px;
   height: 150px;

@@ -4,8 +4,11 @@
 
 <Navigation></Navigation>
 
+<img src="../assets/Group svgg.svg" alt="" class=" w-50 "/>
 
-<img src="../assets/Group svgg.svg" alt="" class=" w-75 ">
+
+
+
 </template>
   
 <script>
@@ -20,11 +23,31 @@ export default{
 </script>
   
 <style scoped>
-
+.box{
+   margin-top: -200px;
+}
+h1 p{
+  color: white;
+}
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+.btn1{
+  background-color: rgba(121, 138, 201, 1);
+  width: 100px !important;
+  height: 50px !important;
+  transition: .3s
+}
+.btn1:hover{
+  transform: translateY(-5px);
+}
 img{
    position: relative;
    top: -250px;
-   right: -300px;
+   right: -500px;
+
 }
 .btn4 {
   background-color: #FFBC51;
@@ -87,8 +110,7 @@ svg {
 }
 
 .btn5 {
-  background-color:
-    rgba(121, 138, 201, 1) !important;
+  background-color:rgba(121, 138, 201, 1) !important;
   transition: .4s;
   width: 100px;
   height: 40px;
