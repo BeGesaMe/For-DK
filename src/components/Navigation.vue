@@ -17,6 +17,7 @@
 
     <!-- Collapsible wrapper -->
     <div
+    
       class="collapse navbar-collapse justify-content-between"
       id="navbarCenteredExample"
     >
