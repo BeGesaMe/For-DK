@@ -5,7 +5,7 @@
 <Navigation></Navigation>
 
 
-
+<img src="../assets/Group svgg.svg" alt="" class=" w-75 ">
 </template>
   
 <script>
@@ -20,6 +20,12 @@ export default{
 </script>
   
 <style scoped>
+
+img{
+   position: relative;
+   top: -250px;
+   right: -300px;
+}
 .btn4 {
   background-color: #FFBC51;
   box-shadow: 3px 3px 10px #FFBC51;

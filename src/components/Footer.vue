@@ -1,10 +1,11 @@
 <template>
 
-<div class="container row">
-  <div class=" container col-9">
+<div class="container d-flex justify-content-between">
+  <div class=" container">
     <div class=" row gap-2 m-3">
-      <div class="card w-25  shadow-4 rounded-2 ">
+      <div class="card w-25  shadow-4 rounded-1 ">
     <div class="card-body">
+      <i class="far fa-newspaper"></i>
     <h5 class="card-title">Card title</h5>
     <p class="card-text">
       Now track all of your transaction easily.
@@ -12,8 +13,9 @@
     </div>
 </div>
 
-<div class="card w-25 shadow-4 rounded-2 ">
+<div class="card w-25 shadow-4 rounded-1 ">
     <div class="card-body">
+      <i class="fas fa-chart-line"></i>
     <h5 class="card-title">Card title</h5>
     <p class="card-text">
       Now track all of your transaction easily.
@@ -25,8 +27,9 @@
 
 <div class="row mt-2 gap-2 m-2">
 
-  <div class="card w-25  shadow-4 rounded-2 col-6">
+  <div class="card w-25  shadow-4 rounded-1 col-6">
     <div class="card-body">
+      <i class="fas fa-male"></i>
     <h5 class="card-title">Card title</h5>
     <p class="card-text">
       Now track all of your transaction easily.
@@ -34,8 +37,9 @@
     </div>
 </div>
 
-<div class="card w-25 shadow-4 rounded-2 col-6">
+<div class="card w-25 shadow-4 rounded-1 col-6">
     <div class="card-body">
+      <i class="fas fa-money-bill"></i>
     <h5 class="card-title">Card title</h5>
     <p class="card-text">
       Now track all of your transaction easily.
@@ -65,8 +69,13 @@
 </script>
 
 <style scoped>
+i{
+  color: rgba(89, 21, 103, 1);
+}
 .card{
   transition: .3s; 
+  width: 300px !important;
+  border-left: 4px solid      rgba(121, 138, 201, 1)  ;
 }
 .card:hover{
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.427) !important;

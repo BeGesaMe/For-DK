@@ -96,7 +96,7 @@ nav{
 }
 .btn1{
 background-color: #FFBC51;  
-box-shadow: 3px 3px 10px #FFBC51; 
+box-shadow: 3px 3px 10px #ffbc5140; 
 transition: .3s;
 }
 .btn1:hover{
