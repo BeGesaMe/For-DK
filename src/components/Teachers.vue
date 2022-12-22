@@ -1,7 +1,7 @@
 <template>
-  <div class="container mt-5 d-flex gap-5">
+  <div class="container srt d-flex gap-5">
 
-    <div class=" w-50">
+    <div class=" w-50 col-12">
       <div class=" d-flex">
          <div class=" box box_hover">
          </div>
@@ -22,11 +22,11 @@
 
     </div>
 
-    <div class=" mt-5">
-<p class="  p1"> <p class="text-danger p fw-bold"> MOBILE TRANSACTION</p></p>
+    <div class=" mt-5 container">
+<p class="  p1"> <p class="text-danger p fw-bold "> MOBILE TRANSACTION</p></p>
 <h1 class=" text-secondary w-75 fw-bold">Smart Mobile 
   <span>Banking</span> </h1>
-<p class=" text-secondary fw-bold">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
+<p class=" text-secondary fw-bold ">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
 <button class=" btn">Learn more</button>
 
     </div>
@@ -41,6 +41,9 @@ export default {
 }
 </script>
 <style scoped>
+.srt{
+  margin-top: 90px;
+}
 .p{
   position: relative;
   z-index: 333;

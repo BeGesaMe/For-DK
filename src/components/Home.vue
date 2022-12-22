@@ -4,7 +4,7 @@
 
 <Navigation></Navigation>
 
-<img src="../assets/Group svgg.svg" alt="" class=" w-50 "/>
+<img src="../assets/jaxon.svg" alt="" class=" w-50 "/>
 
 
 
@@ -13,6 +13,7 @@
   
 <script>
 import Navigation from './Navigation.vue'
+
 
 export default{
   components:{
