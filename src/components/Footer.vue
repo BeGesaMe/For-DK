@@ -2,7 +2,7 @@
 
 <div class="container d-flex justify-content-between">
   <div class=" container">
-    <div class=" row gap-2 m-3">
+    <div class=" row gap-2 m-3 mb-4">
       <div class="card w-25  shadow-4 rounded-1 ">
     <div class="card-body">
       <i class="far fa-newspaper"></i>

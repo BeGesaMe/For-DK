@@ -3,11 +3,7 @@
 <template>
 
 <Navigation></Navigation>
-
-<img src="../assets/jaxon.svg" alt="" class=" w-50 "/>
-
-
-
+<img src="../assets/jaxon.svg" alt="" class="w-50 "/>
 
 </template>
   
@@ -16,9 +12,16 @@ import Navigation from './Navigation.vue'
 
 
 export default{
+  data(){
+return{
+
+}
+  },
   components:{
     Navigation
-  }
+  },
+
+
 }
 
 </script>

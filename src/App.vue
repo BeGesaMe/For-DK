@@ -1,6 +1,6 @@
 
 <template>
- <Home></Home>
+<Home></Home>
 <Footer1></Footer1>
 <Teacher></Teacher>
 </template>
