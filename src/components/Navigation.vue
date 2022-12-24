@@ -83,6 +83,15 @@
 
 <script>
 
+export default{
+  data(){
+    return{
+
+
+    }
+  }
+}
+
 </script>
 
 <style scoped>
@@ -90,10 +99,10 @@ nav{
   background: transparent !important;
   border: none solid !important ;
   position: absolute;
+  z-index: 333;
   top: 0;
   width: 100%;
-
-
+  position: fixed;
 }
 .btn1{
 background-color: #FFBC51;  
