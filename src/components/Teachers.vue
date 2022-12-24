@@ -1,20 +1,21 @@
 <template>
-  <div class="container srt d-flex gap-5">
+  <div class="container srt d-flex gap-5 mt-5 srt2">
 
-    <div class=" w-50 col-12">
+    <div class=" w-50 srt1">
       <div class=" d-flex">
-         <div class=" box box_hover" @click="tanlanganComponent = 'FoureTeacher'">
+         <div class=" box box_hover boxmax" @click="tanlanganComponent = 'FoureTeacher'">
          </div>
-         <div class=" box1 mt-2 box_hover"  @click="tanlanganComponent = 'ThirdTheacher'">
+         <div class=" box1 mt-2 box_hover boxmax"  @click="tanlanganComponent = 'ThirdTheacher'">
          </div>
       </div>
 
       <div class=" d-flex">
-        <div class=" box2 box_hover" @click="tanlanganComponent = 'SecondTeacher'">
+        <div class=" box2 box_hover boxmax" @click="tanlanganComponent = 'SecondTeacher'">
              </div>
-             <div class=" box3 mt-2 box_hover">
+             <div class=" box3 mt-2 box_hover boxmax">
           </div>
-          <div class=" box4  box_hover" @click="tanlanganComponent = 'FirstTeacherVue'">
+
+          <div class=" box4  box_hover boxmax" @click="tanlanganComponent = 'FirstTeacherVue'">
           </div>
       </div>
 
@@ -22,7 +23,7 @@
 
     </div>
     
-    <div class=" mt-5 container srt">
+    <div class=" mt-5 container srt srt3">
       <Transition>
 <component :is="tanlanganComponent"></component>
 </Transition>
@@ -54,6 +55,34 @@ export default {
 }
 </script>
 <style scoped>
+
+@media screen and (max-width: 800px) {
+  .srt2{
+   width: 80%;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+
+  }
+  .srt3{
+      display: block;
+  }
+  .srt1{
+    width: 80% !important;
+    margin-top: 90px !important;
+
+ 
+  }
+  .boxmax{
+    width: 100px !important;
+    height: 100px !important;
+   
+    
+  }
+  .box4{
+    display: none;
+  }
+}
 
 
 .srt{

@@ -1,7 +1,7 @@
 <template>
 
 <div class="container d-flex justify-content-between">
-  <div class=" container">
+  <div class=" container bosscard">
     <div class=" row gap-2 m-3 mb-4">
       <div class="card w-25  shadow-4 rounded-1 ">
     <div class="card-body">
@@ -69,6 +69,18 @@
 </script>
 
 <style scoped>
+
+@media screen and (max-width: 800px){
+  .bosscard{
+     display: none;
+  }
+  .box{
+    margin-top: 60px;
+    margin: auto;
+  }
+}
+
+
 i{
   color: rgba(89, 21, 103, 1);
 }

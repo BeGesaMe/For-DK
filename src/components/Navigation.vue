@@ -86,6 +86,7 @@
 </script>
 
 <style scoped>
+
 nav{
   background: transparent !important;
   border: none solid !important ;

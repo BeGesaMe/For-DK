@@ -27,6 +27,11 @@ return{
 </script>
   
 <style scoped>
+@media screen and (max-width: 800px) {
+img{
+  display: none;
+}
+}
 .box{
    margin-top: -200px;
 }
