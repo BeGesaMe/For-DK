@@ -3,26 +3,35 @@
 <template>
 
 <Navigation></Navigation>
-
-<img src="../assets/Group svgg.svg" alt="" class=" w-50 "/>
-
-
-
+<img src="../assets/jaxon.svg" alt="" class="w-50 "/>
 
 </template>
   
 <script>
 import Navigation from './Navigation.vue'
 
+
 export default{
+  data(){
+return{
+
+}
+  },
   components:{
     Navigation
-  }
+  },
+
+
 }
 
 </script>
   
 <style scoped>
+@media screen and (max-width: 800px) {
+img{
+  display: none;
+}
+}
 .box{
    margin-top: -200px;
 }

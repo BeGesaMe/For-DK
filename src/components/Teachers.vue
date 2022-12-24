@@ -1,61 +1,92 @@
 <template>
-  <div class="container mt-5 d-flex gap-5">
+  <div class="container srt d-flex gap-5 mt-5 srt2">
 
-    <div class=" w-50">
+    <div class=" w-50 srt1">
       <div class=" d-flex">
-         <div class=" box box_hover">
+         <div class=" box box_hover boxmax" @click="tanlanganComponent = 'FoureTeacher'">
          </div>
-         <div class=" box1 mt-2 box_hover">
+         <div class=" box1 mt-2 box_hover boxmax"  @click="tanlanganComponent = 'ThirdTheacher'">
          </div>
       </div>
 
       <div class=" d-flex">
-        <div class=" box2 box_hover">
+        <div class=" box2 box_hover boxmax" @click="tanlanganComponent = 'SecondTeacher'">
              </div>
-             <div class=" box3 mt-2 box_hover">
+             <div class=" box3 mt-2 box_hover boxmax">
           </div>
-          <div class=" box4  box_hover">
+
+          <div class=" box4  box_hover boxmax" @click="tanlanganComponent = 'FirstTeacherVue'">
           </div>
       </div>
 
 
 
     </div>
-
-    <div class=" mt-5">
-<p class="  p1"> <p class="text-danger p fw-bold"> MOBILE TRANSACTION</p></p>
-<h1 class=" text-secondary w-75 fw-bold">Smart Mobile 
-  <span>Banking</span> </h1>
-<p class=" text-secondary fw-bold">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
-<button class=" btn">Learn more</button>
-
+    
+    <div class=" mt-5 container srt srt3">
+      <Transition>
+<component :is="tanlanganComponent"></component>
+</Transition>
     </div>
+
 
 
     
   </div>
 </template>
 <script>
+import FirstTeacherVue from './FirstTeacher.vue';
+import SecondTeacher from './SecondTeacher.vue';
+import ThirdTheacher from './ThirdTeacher.vue';
+import FoureTeacher from './4Teacher.vue'
 export default {
-  
+  components:{
+    FirstTeacherVue,
+    SecondTeacher,
+    ThirdTheacher,
+    FoureTeacher
+   
+  },
+  data(){
+    return{
+      tanlanganComponent:'FirstTeacherVue'
+    }
+  }
 }
 </script>
 <style scoped>
-.p{
-  position: relative;
-  z-index: 333;
+
+@media screen and (max-width: 800px) {
+  .srt2{
+   width: 80%;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+
+  }
+  .srt3{
+      display: block;
+  }
+  .srt1{
+    width: 80% !important;
+    margin-top: 90px !important;
+
+ 
+  }
+  .boxmax{
+    width: 100px !important;
+    height: 100px !important;
+   
+    
+  }
+  .box4{
+    display: none;
+  }
 }
-.p1::before{
-content: '';
-position: absolute;
-width: 90px;
-height: 80px;
-margin-top: -20px;
-border-radius: 45% 55% 41% 59% / 55% 65% 35% 45% ;
-background-color: #F7F3FA;;
-}
-span{
-  color:rgba(92, 14, 98, 1) ;
+
+
+.srt{
+transition: 2s;
 }
 .btn{
   color:rgba(92, 14, 98, 1) ;
@@ -104,13 +135,24 @@ span{
   border-radius: 30% 70% 62% 38% / 30% 30% 70% 70% ;
   background-size: cover;
   transform: rotate(10deg);
-  margin-top: -55px !important;
-  margin-right: 50px;
+  margin-top: -70px !important;
+  margin-right: 80px;
 }
 .box_hover:hover{
    background-image: url('../assets/john-torcasio-tgVm0tkbf1U-unsplash.png');
    transform: perspective(50rem) translateZ(50px);
    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.358);
+}
+
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 
 
