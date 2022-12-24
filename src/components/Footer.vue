@@ -134,6 +134,7 @@ jaxon
     <button class="btn btn1">Learn more</button>
   </div>
   <br>
+  bekjon qanday ozi
   
 </div>
 

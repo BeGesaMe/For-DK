@@ -70,6 +70,7 @@ export default {
   .srt1{
     width: 80% !important;
     margin-top: 90px !important;
+    margin: auto;
 
  
   }
