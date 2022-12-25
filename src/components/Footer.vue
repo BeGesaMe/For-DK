@@ -1,81 +1,5 @@
 <template>
 
-jaxon
-
-<v-row justify="center">
-
-    <v-dialog
-      v-model="dialog"
-      fullscreen
-      :scrim="false"
-      transition="dialog-bottom-transition"
-    >
-      <template v-slot:activator="{ props }">
-        <v-btn
-          color="primary"
-          dark
-          v-bind="props"
-        >
-          Open Dialog
-        </v-btn>
-      </template>
-      <v-card>
-        <v-toolbar
-          dark
-          color="primary"
-        >
-          <v-btn
-            icon
-            dark
-            @click="dialog = false"
-          >
-            <v-icon>mdi-close</v-icon>
-          </v-btn>
-          <v-toolbar-title>Settings</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-toolbar-items>
-            <v-btn
-              variant="text"
-              @click="dialog = false"
-            >
-              Save
-            </v-btn>
-          </v-toolbar-items>
-        </v-toolbar>
-        <v-list
-          lines="two"
-          subheader
-        >
-          <v-list-subheader>User Controls</v-list-subheader>
-          <v-list-item title="Content filtering" subtitle="Set the content filtering level to restrict apps that can be downloaded"></v-list-item>
-          <v-list-item title="Password" subtitle="Require password for purchase or use password to restrict purchase"></v-list-item>
-        </v-list>
-        <v-divider></v-divider>
-        <v-list
-          lines="two"
-          subheader
-        >
-          <v-list-subheader>General</v-list-subheader>
-          <v-list-item title="Notifications" subtitle="Notify me about updates to apps or games that I downloaded">
-            <template v-slot:prepend>
-              <v-checkbox v-model="notifications"></v-checkbox>
-            </template>
-          </v-list-item>
-          <v-list-item title="Sound" subtitle="Auto-update apps at any time. Data charges may apply">
-            <template v-slot:prepend>
-              <v-checkbox v-model="sound"></v-checkbox>
-            </template>
-          </v-list-item>
-          <v-list-item title="Auto-add widgets" subtitle="Automatically add home screen widgets">
-            <template v-slot:prepend>
-              <v-checkbox v-model="widgets"></v-checkbox>
-            </template>
-          </v-list-item>
-        </v-list>
-      </v-card>
-    </v-dialog>
-  </v-row>
-
 <div class="container d-flex justify-content-between">
   <div class=" container bosscard">
     <div class=" row gap-2 m-3 mb-4">
@@ -86,6 +10,7 @@ jaxon
     <p class="card-text">
       Now track all of your transaction easily.
     </p>
+        <v_row></v_row>
     </div>
 </div>
 
@@ -96,10 +21,11 @@ jaxon
     <p class="card-text">
       Now track all of your transaction easily.
     </p>
+    <v_row></v_row>
     </div>
 </div>
     </div>
-  
+    
 
 <div class="row mt-2 gap-2 m-2">
 
@@ -110,6 +36,8 @@ jaxon
     <p class="card-text">
       Now track all of your transaction easily.
     </p>
+    <v_row></v_row>
+  
     </div>
 </div>
 
@@ -120,6 +48,7 @@ jaxon
     <p class="card-text">
       Now track all of your transaction easily.
     </p>
+    <v_row></v_row>
     </div>
 </div>
 </div>
@@ -130,19 +59,30 @@ jaxon
      <h1 class=" h12">Make & Share <span class=" text-black">Payments</span> With Community</h1> 
     </h1>
     <p class=" fw-light">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
+    
 
     <button class="btn btn1">Learn more</button>
   </div>
   <br>
+
   
 </div>
+
+
+
+
+
 
 
 </template>
 
 <script>
+import v_row from './v-row.vue'
 
   export default {
+    components:{
+      v_row
+    },
     data () {
       return {
         dialog: false,
@@ -157,10 +97,12 @@ jaxon
 
 <style scoped>
 
-.dialog-bottom-transition-enter-active,
+  .dialog-bottom-transition-enter-active,
 .dialog-bottom-transition-leave-active {
-  transition: transform .2s ease-in-out;
+  transition:  2.5s ease-in-out;
 }
+
+
 
 @media screen and (max-width: 800px){
   .bosscard{
