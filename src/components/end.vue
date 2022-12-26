@@ -10,7 +10,7 @@
                   <div class="textbox">
                    <h1 class="text4 fw-bold">What Our <h1 class="text3 ms-2 fw-bold">Customer</h1> <h1 class="text5 fw-bold">Are saying</h1></h1>
 
-                   <p class=" fw-bold ">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw</p>
+                   <p class=" fw-bold polvon">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw</p>
                   </div>
                 
 
@@ -26,7 +26,7 @@
                       <h5 class="text-center mt-2 fw-bold">CEO at Softpanda</h5>
                    </div>
 
-                   <div class="img2">
+                   <div class="img2" >
                        <img src="../assets/bobo2.png" alt="">
                    </div>
 
@@ -50,7 +50,6 @@
 
           
 
-        
           
         </div>
 </template>
@@ -61,7 +60,90 @@
    
 <style>
 
+@media (max-width: 550px){
+   
+   .img2{
+      display: none;
+   }
+   .img3{
+      display: none;
+   }
+   .img4{
+      display: none;
+   }
+   .img5{
+      display: none;
+   }
+   .kurinmas{
+      display: none;
+   }
+   .shakl1{
+      display: none;
+   }
+   .polvon{
+      display: none;
+   }
+   .malumot{
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+  
+   }
+   .text4{
+   
+      font-size: 21px;
+      display: inline-block;
+      position: relative;
+      bottom: 248px;
+      left: 60px;
+   }
+   .text5{
+      font-size: 21px;
+      position: relative;
+      bottom: 290px;
+      width: 140% !important;
+      left: 110px;
+   }
+   .text3{
+      width: 100%;
+      font-size: 21px;
+      display: inline-block;
+      position: relative;
+      bottom: 280px;
+      left: 160px;
+      
+   }
 
+   .img1{
+      position: relative;
+      right: 10px;
+      bottom: 40px;
+   }
+   .bobo{
+      width: 90% !important;
+      position: absolute !important;
+      right: 140%;
+     
+   }
+   .bobo p{
+      position: relative;
+      left: 6px;
+      bottom: 20px;
+   }
+   .bobo h1{
+      width: 70%;
+      position: relative;
+      left: 40px;
+      top: 20px;
+      font-size: 30px;
+   }
+   .bobo h5{
+      width: 80%;
+      font-size: 15px;
+      position: relative;
+      left: 26px;
+   
+   }
+}
 
 
 .bobo{

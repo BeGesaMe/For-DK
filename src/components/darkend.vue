@@ -76,6 +76,12 @@
     </script>
         
     <style>
+
+    @media (max-width: 350px){
+        .textquti{
+            display: none;
+        }
+    }
     
     .qut1{
         width: 25%;

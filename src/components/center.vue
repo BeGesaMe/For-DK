@@ -19,17 +19,17 @@
                 <h6 class="">CREDIT CARD</h6>
             </div>
 
-            <h1 class="text1 fw-bold">Payment</h1>
-            <h1 class="text2 fw-bold">Gets Easier</h1>
+            <h1 class="text1 fw-bold salom1">Payment</h1>
+            <h1 class="text2 fw-bold salom2">Gets Easier</h1>
 
             <p class="text-muted w-50 fw-bold">Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw</p>
 
-            <a href="" class="fw-bold">Learn more <i class="fas fa-arrow-right"></i></a>
+            <a href="" class="fw-bold ">Learn more <i class="fas fa-arrow-right"></i></a>
         </div>
      </div>
 
 
-     <div class="box2">
+     <div class="boxcha">
         <img src="../assets/phone.png" alt="" class="rasm">
        
      </div>
@@ -117,11 +117,85 @@
  .box1{
     width: 50%;
     height: 70vh;
-    display: flex;
  }
- .box2{
+ .boxcha{
     width: 50%;
     height: 70vh;
+ }
+@media (max-width: 800px){
+   .ramka a{
+      position: relative;
+      top: 70px;
+   }
+   .shakl{
+      width: 30%;
+      height: 10vh;
+   }
+   .shakl h6{
+      position: relative;
+      bottom: 500px !important;
+   }
+   .salom1{
+      position: relative;
+      top: 40px;
+      width: 50%;
+
+   }
+   .salom2{
+      width: 50%;
+   }
+}
+
+
+ @media (max-width: 550px){
+   .boxboss{
+      display: block;
+   }
+   .box1{
+      width: 100%;
+      height: 50vh;
+      position: relative;
+      top: 250px;
+   
+   }
+   .boxcha{
+      width: 100%;
+      height: 50vh;
+      position: relative;
+      bottom: 460px;
+      background-image: url("../assets/phone2.png");
+      background-size: cover;
+   }
+   .boxcha img{
+      display: none;
+   }
+   .shakl{
+      width: 20%;
+      height: 8vh;
+   }
+   .shakl h6{
+      width: 300% !important;
+      position: absolute;
+      top: 30px;
+      left: 27px;
+      font-size: 10px;
+   }
+   .ramka a{
+      position: relative;
+      top: 50px;
+   }
+   .salom1{
+      position: relative;
+      top: 30px;
+   }
+   .ramka{
+      width: 100%;
+      height: 50vh;
+   }
+   .ramka p{
+      width: 100%;
+   
+   }
  }
 </style>
 

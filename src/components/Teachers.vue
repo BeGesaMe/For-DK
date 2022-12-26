@@ -18,7 +18,7 @@
           <div class=" box4  box_hover boxmax" @click="tanlanganComponent = 'FirstTeacherVue'">
           </div>
       </div>
-jaxon aka nima gap
+
 
 
     </div>
